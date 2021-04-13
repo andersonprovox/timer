@@ -1,3 +1,4 @@
+import { Exercise } from './exercise';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'timer';
+  config: boolean = false;
+  exercises: Exercise[] = [{
+    name: 'Abdominal',
+    duration: 30,
+    repetitions: 3,
+    preparation: 15,
+    rest: 20
+  }];
+
 }
